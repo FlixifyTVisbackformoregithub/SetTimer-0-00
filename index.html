@@ -8,11 +8,27 @@
         body {
             background-color: yellow;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .title {
+            font-size: 2em;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .instruction {
+            font-size: 1.5em;
+            color: white;
+            margin: 20px 0;
         }
         .timer {
             background-color: black;
@@ -24,7 +40,11 @@
     </style>
 </head>
 <body>
-    <div class="timer" id="timer">0:00:00</div>
+    <div class="container">
+        <div class="title">FLIXTIMER</div>
+        <div class="instruction">Set your timer:</div>
+        <div class="timer" id="timer">0:00:00</div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
